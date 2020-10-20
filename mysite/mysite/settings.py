@@ -25,13 +25,15 @@ SECRET_KEY = '&d%*a4w)em$xe5w7!5#wd!h&9l8_+l71mhc$!!rxlr&7mqx194'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig',
+    'rest_framework',
+    'corona.apps.CoronaConfig',
+    'corona',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
